@@ -45,6 +45,8 @@ Lokista näkee että loin tämän repon GitHub sivun kautta, ja lisäsin virtual
 Tein pari testi muutosta lisäämällä tiedoston turvallinen.exe. Nyt kun aloitin kirjoittaa raporttia lisäsin juuri
 hetki sitten MarkDown.md tiedoston.
 
+	git diff versio1 versio2
+
 ![git_diff](https://user-images.githubusercontent.com/64011606/115381635-6be55200-a1dc-11eb-9fa0-41d31291b0ca.png)
 
 Ensimmäinen muokkaus oli readme.md markdownin kokeilua repossa. Katsoin kahden ensimmäisen version välisiä eroja
