@@ -60,9 +60,11 @@ Näen kätevästi kaikki esim. markdown tiedostoon tehdyt muutokset ja kuka muut
 c) Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset 'git reset --hard'. Huomaa, että tässä toiminnossa ei ole peruutus nappia.
 
 Poistan turvallinen.exe tiedoston
+	
 	rm turvallinen.exe
 	
 Kokeilen komentoa
+	
 	git reset --hard
 
 ![git_reset](https://user-images.githubusercontent.com/64011606/115383160-2cb80080-a1de-11eb-93d1-20dd0ef95b08.png)
