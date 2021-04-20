@@ -5,9 +5,11 @@
 Käytän harjoituksessa omaa pöytäkonetta, jossa Windows 10, johon on asennettu VirtualBox 6.1.16 r140961,
 VirtualBoxissa käyttöjärjestelmänä Ubuntu 20.04 LTS
 
+Aloitan raportoinnin 20.04.2021 KLO 12:45
+
 a) MarkDown. Tee tämän tehtävän raportti MarkDownina. Helpointa on tehdä raportti GitHub-varastoon,
 jolloin md-päätteiset tiedostot muotoillaan automaattisesti. Tyhjä rivi tekee kappalejaon, risuaita otsikon,
-sisennys merkitsee koodinpätkän. Vinkinä artikkeli terokarvinen.com/2016/publish-your-project-with-github/index.html
+sisennys merkitsee koodinpätkän. Vinkkinä artikkeli terokarvinen.com/2016/publish-your-project-with-github/index.html
 
 Aloitin luomalla kaubbias repositoryyn uuden MarkDown tiedoston
 	
@@ -26,3 +28,11 @@ Commit messageen kirjoitan "Add MarkDown"
 Jos muutoksia on tehty otan ne talteen ennenkuin kirjoitan git push komennon
 
 	git push
+
+Push onnistui ongelmitta
+
+b) Näytä omalla git varastollasi esimerkit komennoista 'git log', 'git diff' ja 'git blame'
+
+Repossa kirjoitan komennon git log
+
+	git log
