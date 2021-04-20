@@ -70,3 +70,93 @@ Kokeilen komentoa
 ![git_reset](https://user-images.githubusercontent.com/64011606/115383160-2cb80080-a1de-11eb-93d1-20dd0ef95b08.png)
 
 Kätevä komento jolla saadaan nykyinen repo versio ja sen tiedostot takaisin.
+
+f) Tee uusi salt-moduli. Voit asentaa ja konfiguroida minkä vain uuden ohjelman: demonin, työpöytäohjelman tai komentokehotteesta toimivan ohjelman. Käytä tarvittaessa 'find printf "%T+ "p\n"|sort' löytääksesi uudet asetustiedostot.
+
+	cd /srv/salt
+	
+Salt kansiossa tehdään ohjelmalle oma kansio, asennan audacity:n joten kansion nimeksi kirjoitan:
+	
+	sudo mkdir audacity
+	
+Mennään pois srv/salt kansiosta
+	
+	cd ..
+	
+Asennetaan audacity koneeseen komennoilla:
+	
+	sudo add-apt-repository ppa:ubuntuhandbook1/audacity
+
+Paina enter
+
+	sudo apt-get update
+
+	sudo apt-get install audacity
+	
+![hidden-files](https://user-images.githubusercontent.com/64011606/115387605-9a1a6000-a1e3-11eb-9f24-a0a4856a9229.png)	
+
+Varmista että show hidden files on päällä
+
+mene kotikansioosi
+
+	cd /home/käyttäjä
+
+Omassa tapauksessa
+
+	cd /home/myllys
+
+![audacity_data](https://user-images.githubusercontent.com/64011606/115387880-e9609080-a1e3-11eb-9433-5ac0f40d6b03.png)
+
+Etsitään asetustiedostot komennolla
+
+	find .audacity-data -printf '%T+ %p\n'|sort
+	
+Löytyi konfiguraatio tiedosto .audacity-data/audacity.cfg
+	
+Luodaan tilatiedosto audacitylle
+
+	sudoedit /srv/salt/audacity/audacity.sls
+	
+Sisällöksi
+
+audacity:
+  pkg.installed
+/home/myllys/.audacity-data/audacity.cfg:
+  file.managed:
+    - source: salt://audacity/audacity.cfg
+
+Kopioidaan tiedosto audacity.cfg /srv/salt/audacity kansioon
+
+	sudo cp /home/myllys/.audacity-data/audacity.cfg /srv/salt/audacity/audacity.cfg
+	
+Muokataan salt audacity konfiguraatiota
+
+	sudo nano /srv/salt/audacity.cfg
+
+Esim muutetaan kohta AudioTimeFormat=hh:mm:ss > AudioTimeFormat=mm:hh:ss nyt minuutit näkyy ennen tunteja
+
+	sudo salt '*' state.apply /audacity/audacity
+	
+![audacity_sls](https://user-images.githubusercontent.com/64011606/115391878-a1903800-a1e8-11eb-81ed-067756eea447.png)
+
+konfiguraatio tiedoston muuttaminen toimii, testataan että pkg installed ja automaatio toimii poistamalla audacity
+
+	sudo apt-get purge audacity
+	
+Exec uudestaan komento 
+	
+	sudo salt '*' state-apply /audacity/audacity
+	
+![uutta_vaan](https://user-images.githubusercontent.com/64011606/115392894-bfaa6800-a1e9-11eb-820d-875803289688.png)
+
+Suoritetaan sama sudo salt testiksi ja muutoksia ei pitäisi tapahtua:
+
+![no_changes](https://user-images.githubusercontent.com/64011606/115393077-f5e7e780-a1e9-11eb-9126-570019c2828e.png)
+
+Lähteet: 
+Audacity 2021. Preferences manual. Luettavissa: https://manual.audacityteam.org/man/preferences.html. Luettu: 20.04.2021
+
+Santeri Myllys 2021. Palvelinten hallinta harjoitus 2. Luettavissa: https://myllys.wordpress.com/palvelinten-hallinta-harjoitus-2-spring-2021/. Luettu: 20.04.2021
+
+Tero Karvinen 2016. Publish your project with GitHub. Luettavissa: terokarvinen.com/2016/publish-your-project-with-github/index.html. Luettu: 20.04.2021
+
