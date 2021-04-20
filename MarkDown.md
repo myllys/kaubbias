@@ -49,4 +49,9 @@ hetki sitten MarkDown.md tiedoston.
 
 Ensimmäinen muokkaus oli readme.md markdownin kokeilua repossa. Katsoin kahden ensimmäisen version välisiä eroja
 
+	git blame MarkDown.md
+
+![git_blame](https://user-images.githubusercontent.com/64011606/115382195-15c4de80-a1dd-11eb-80b5-cf6599ea288c.png)
+
+Näen kätevästi kaikki esim. markdown tiedostoon tehdyt muutokset ja kuka muutoksen teki.
 
