@@ -57,3 +57,14 @@ Ensimmäinen muokkaus oli readme.md markdownin kokeilua repossa. Katsoin kahden 
 
 Näen kätevästi kaikki esim. markdown tiedostoon tehdyt muutokset ja kuka muutoksen teki.
 
+c) Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset 'git reset --hard'. Huomaa, että tässä toiminnossa ei ole peruutus nappia.
+
+Poistan turvallinen.exe tiedoston
+	rm turvallinen.exe
+	
+Kokeilen komentoa
+	git reset --hard
+
+![git_reset](https://user-images.githubusercontent.com/64011606/115383160-2cb80080-a1de-11eb-93d1-20dd0ef95b08.png)
+
+Kätevä komento jolla saadaan nykyinen repo versio ja sen tiedostot takaisin.
