@@ -119,11 +119,11 @@ Luodaan tilatiedosto audacitylle
 	
 Sisällöksi
 
-audacity:
-  pkg.installed
-/home/myllys/.audacity-data/audacity.cfg:
-  file.managed:
-    - source: salt://audacity/audacity.cfg
+	audacity:
+  	  pkg.installed
+	/home/myllys/.audacity-data/audacity.cfg:
+ 	  file.managed:
+  	    - source: salt://audacity/audacity.cfg
 
 Kopioidaan tiedosto audacity.cfg /srv/salt/audacity kansioon
 
