@@ -44,3 +44,9 @@ Repossa kirjoitan komennon git log
 Lokista näkee että loin tämän repon GitHub sivun kautta, ja lisäsin virtualboxin kautta readme.md tiedoston repoon.
 Tein pari testi muutosta lisäämällä tiedoston turvallinen.exe. Nyt kun aloitin kirjoittaa raporttia lisäsin juuri
 hetki sitten MarkDown.md tiedoston.
+
+![git_diff](https://user-images.githubusercontent.com/64011606/115381635-6be55200-a1dc-11eb-9fa0-41d31291b0ca.png)
+
+Ensimmäinen muokkaus oli readme.md markdownin kokeilua repossa. Katsoin kahden ensimmäisen version välisiä eroja
+
+
