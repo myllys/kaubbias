@@ -161,5 +161,5 @@ Audacity 2021. Preferences manual. Luettavissa: https://manual.audacityteam.org/
 
 Santeri Myllys 2021. Palvelinten hallinta harjoitus 2. Luettavissa: https://myllys.wordpress.com/palvelinten-hallinta-harjoitus-2-spring-2021/. Luettu: 20.04.2021
 
-Tero Karvinen 2016. Publish your project with GitHub. Luettavissa: terokarvinen.com/2016/publish-your-project-with-github/index.html. Luettu: 20.04.2021
+Tero Karvinen 2016. Publish your project with GitHub. Luettavissa: http://terokarvinen.com/2016/publish-your-project-with-github/index.html. Luettu: 20.04.2021
 
