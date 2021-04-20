@@ -5,7 +5,7 @@
 Käytän harjoituksessa omaa pöytäkonetta, jossa Windows 10, johon on asennettu VirtualBox 6.1.16 r140961,
 VirtualBoxissa käyttöjärjestelmänä Ubuntu 20.04 LTS
 
-Aloitan raportoinnin 20.04.2021 KLO 12:45
+Aloitan raportoinnin 20.04.2021 Klo 12:45
 
 a) MarkDown. Tee tämän tehtävän raportti MarkDownina. Helpointa on tehdä raportti GitHub-varastoon,
 jolloin md-päätteiset tiedostot muotoillaan automaattisesti. Tyhjä rivi tekee kappalejaon, risuaita otsikon,
@@ -153,7 +153,10 @@ Suoritetaan sama sudo salt testiksi ja muutoksia ei pitäisi tapahtua:
 
 ![no_changes](https://user-images.githubusercontent.com/64011606/115393077-f5e7e780-a1e9-11eb-9126-570019c2828e.png)
 
+Tehtävä 3 raportti päättyi: 20.04.2021 Klo 15:15
+
 Lähteet: 
+
 Audacity 2021. Preferences manual. Luettavissa: https://manual.audacityteam.org/man/preferences.html. Luettu: 20.04.2021
 
 Santeri Myllys 2021. Palvelinten hallinta harjoitus 2. Luettavissa: https://myllys.wordpress.com/palvelinten-hallinta-harjoitus-2-spring-2021/. Luettu: 20.04.2021
