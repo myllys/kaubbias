@@ -31,8 +31,16 @@ Jos muutoksia on tehty otan ne talteen ennenkuin kirjoitan git push komennon
 
 Push onnistui ongelmitta
 
+![kaubbias](https://user-images.githubusercontent.com/64011606/115380597-676c6980-a1db-11eb-9880-3cab45ed548a.png)
+
 b) Näytä omalla git varastollasi esimerkit komennoista 'git log', 'git diff' ja 'git blame'
 
 Repossa kirjoitan komennon git log
 
 	git log
+
+![git_log](https://user-images.githubusercontent.com/64011606/115380538-558ac680-a1db-11eb-8444-36bf5bc3050a.png)
+
+Lokista näkee että loin tämän repon GitHub sivun kautta, ja lisäsin virtualboxin kautta readme.md tiedoston repoon.
+Tein pari testi muutosta lisäämällä tiedoston turvallinen.exe. Nyt kun aloitin kirjoittaa raporttia lisäsin juuri
+hetki sitten MarkDown.md tiedoston.
