@@ -7,7 +7,7 @@ VirtualBoxissa käyttöjärjestelmänä Ubuntu 20.04 LTS
 
 Aloitan raportoinnin 20.04.2021 Klo 12:45
 
-a) MarkDown. Tee tämän tehtävän raportin MarkDownina. Helpointa on tehdä raportti GitHub-varastoon,
+a) MarkDown. Tee tämän tehtävän raportti MarkDownina. Helpointa on tehdä raportti GitHub-varastoon,
 jolloin md-päätteiset tiedostot muotoillaan automaattisesti. Tyhjä rivi tekee kappalejaon, risuaita otsikon,
 sisennys merkitsee koodinpätkän. Vinkkinä artikkeli terokarvinen.com/2016/publish-your-project-with-github/index.html
 
